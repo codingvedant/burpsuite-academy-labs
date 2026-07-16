@@ -8,8 +8,8 @@ These labs progressively add more server-side defenses like content-type checks,
 
 | # | Lab | Difficulty | Status |
 |---|-----|-----------|--------|
-| 1 | Remote code execution via web shell upload | Apprentice | |
-| 2 | Web shell upload via Content-Type restriction bypass | Apprentice | |
+| 1 | Remote code execution via web shell upload | Apprentice | Solved |
+| 2 | Web shell upload via Content-Type restriction bypass | Apprentice | Solved |
 | 3 | Web shell upload via path traversal | Practitioner | |
 | 4 | Web shell upload via extension blacklist bypass | Practitioner | |
 | 5 | Web shell upload via obfuscated file extension | Practitioner | |
