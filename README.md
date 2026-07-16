@@ -17,7 +17,7 @@ python file-upload/lab-01-rce-via-web-shell/solve.py https://0aXX00...web-securi
 
 ## Labs
 
-**File Upload Vulnerabilities** (2/7) - [labs](file-upload/)
+**File Upload Vulnerabilities** (3/7) - [labs](file-upload/)
 
 Exploiting file upload functionality to achieve remote code execution through web shells, bypassing content-type restrictions, path traversal, extension blacklists, and race conditions.
 

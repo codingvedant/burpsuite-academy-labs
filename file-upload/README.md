@@ -10,7 +10,7 @@ These labs progressively add more server-side defenses like content-type checks,
 |---|-----|-----------|--------|
 | 1 | Remote code execution via web shell upload | Apprentice | Solved |
 | 2 | Web shell upload via Content-Type restriction bypass | Apprentice | Solved |
-| 3 | Web shell upload via path traversal | Practitioner | |
+| 3 | Web shell upload via path traversal | Practitioner | Solved |
 | 4 | Web shell upload via extension blacklist bypass | Practitioner | |
 | 5 | Web shell upload via obfuscated file extension | Practitioner | |
 | 6 | Remote code execution via polyglot web shell upload | Practitioner | |
