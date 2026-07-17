@@ -14,4 +14,4 @@ These labs progressively add more server-side defenses like content-type checks,
 | 4 | Web shell upload via extension blacklist bypass | Practitioner | Solved |
 | 5 | Web shell upload via obfuscated file extension | Practitioner | Solved |
 | 6 | Remote code execution via polyglot web shell upload | Practitioner | Solved |
-| 7 | Web shell upload via race condition | Expert | |
+| 7 | Web shell upload via race condition | Expert | Solved |
