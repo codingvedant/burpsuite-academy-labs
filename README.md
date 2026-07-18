@@ -21,6 +21,10 @@ python file-upload/lab-01-rce-via-web-shell/solve.py https://0aXX00...web-securi
 
 Exploiting file upload functionality to achieve remote code execution through web shells, bypassing content-type restrictions, path traversal, extension blacklists, and race conditions.
 
+**Path Traversal** (6/6) - [labs](path-traversal/)
+
+Reading arbitrary files from the server by manipulating file paths to escape the intended directory using traversal sequences and encoding tricks.
+
 ## Setup
 
 ```bash
