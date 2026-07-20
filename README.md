@@ -25,6 +25,10 @@ Exploiting file upload functionality to achieve remote code execution through we
 
 Reading arbitrary files from the server by manipulating file paths to escape the intended directory using traversal sequences and encoding tricks.
 
+**Server-Side Request Forgery (SSRF)** (5/5) - [labs](ssrf/)
+
+Making the server send HTTP requests to unintended internal services, localhost admin panels, and cloud metadata endpoints by abusing URL parameters.
+
 ## Setup
 
 ```bash
