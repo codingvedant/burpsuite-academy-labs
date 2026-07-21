@@ -29,6 +29,10 @@ Reading arbitrary files from the server by manipulating file paths to escape the
 
 Making the server send HTTP requests to unintended internal services, localhost admin panels, and cloud metadata endpoints by abusing URL parameters.
 
+**Insecure Deserialization** (4/5) - [labs](insecure-deserialization/)
+
+Tampering with serialized objects in session cookies to escalate privileges, inject arbitrary objects, and trigger gadget chains for remote code execution.
+
 ## Setup
 
 ```bash
