@@ -12,4 +12,4 @@ The labs start with simple attribute modification in PHP serialized objects, mov
 | 2 | Modifying serialized data types | Practitioner | Solved |
 | 3 | Using application functionality to exploit insecure deserialization | Practitioner | Solved |
 | 4 | Arbitrary object injection in PHP | Practitioner | Solved |
-| 5 | Exploiting Java deserialization with Apache Commons | Practitioner | Not started |
+| 5 | Exploiting Java deserialization with Apache Commons | Practitioner | Solved |

@@ -1,6 +1,7 @@
 import sys
 import os
 import base64
+from urllib.parse import unquote
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../.."))
 from utils.base import LabSession
 
@@ -13,7 +14,7 @@ lab.login("wiener", "peter")
 cookie = lab.session.cookies.get("session")
 lab.info(f"Original cookie: {cookie}")
 
-raw = base64.b64decode(cookie).decode()
+raw = base64.b64decode(unquote(cookie)).decode()
 lab.info(f"Deserialized: {raw}")
 
 # change admin boolean from 0 (false) to 1 (true)
