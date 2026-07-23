@@ -1,6 +1,7 @@
 import sys
 import os
 import base64
+from urllib.parse import unquote
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../.."))
 from utils.base import LabSession
 
@@ -9,7 +10,7 @@ lab = LabSession()
 lab.login("wiener", "peter")
 
 cookie = lab.session.cookies.get("session")
-raw = base64.b64decode(cookie).decode()
+raw = base64.b64decode(unquote(cookie)).decode()
 lab.info(f"Original: {raw}")
 
 # change username to administrator and access_token from string to integer 0

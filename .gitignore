@@ -23,6 +23,9 @@ Thumbs.db
 *.burp
 *.jar
 
+# Tools
+phpggc/
+
 # Secrets
 .env
 *.key
