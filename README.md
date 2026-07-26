@@ -33,6 +33,10 @@ Making the server send HTTP requests to unintended internal services, localhost 
 
 Tampering with serialized objects in session cookies to escalate privileges, inject arbitrary objects, and trigger gadget chains for remote code execution.
 
+**Race Conditions** (6/6) - [labs](race-conditions/)
+
+Exploiting timing gaps in concurrent request processing to bypass business logic limits, skip authentication steps, and abuse partially constructed objects using the single-packet attack technique.
+
 ## Setup
 
 ```bash
