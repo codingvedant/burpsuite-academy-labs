@@ -37,6 +37,10 @@ Tampering with serialized objects in session cookies to escalate privileges, inj
 
 Exploiting timing gaps in concurrent request processing to bypass business logic limits, skip authentication steps, and abuse partially constructed objects using the single-packet attack technique.
 
+**API Testing** (4/4) - [labs](api-testing/)
+
+Attacking REST APIs by reading their documentation, calling unused HTTP methods, exploiting mass assignment to inject fields the frontend hides, and abusing server-side parameter pollution to hijack internal requests.
+
 ## Setup
 
 ```bash
