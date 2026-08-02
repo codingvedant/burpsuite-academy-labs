@@ -12,8 +12,8 @@ Client-side labs are driven in the browser (URL params, DOM Invader, JS console)
 
 | # | Lab | Difficulty | Status |
 |---|-----|-----------|--------|
-| 1 | Client-side prototype pollution via browser APIs | Apprentice | Solved |
-| 2 | DOM XSS via client-side prototype pollution | Practitioner | Solved |
+| 1 | Client-side prototype pollution via browser APIs | Practitioner | Solved |
+| 2 | DOM XSS via client-side prototype pollution | Apprentice | Solved |
 | 3 | DOM XSS via an alternative prototype pollution vector | Practitioner | Solved |
 | 4 | Client-side prototype pollution via flawed sanitization | Practitioner | Solved |
 | 5 | Client-side prototype pollution in third-party libraries | Practitioner | Solved |
