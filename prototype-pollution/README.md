@@ -24,6 +24,6 @@ Client-side labs are driven in the browser (URL params, DOM Invader, JS console)
 |---|-----|-----------|--------|
 | 6 | Privilege escalation via server-side prototype pollution | Practitioner | Solved |
 | 7 | Detecting server-side prototype pollution without polluted property reflection | Practitioner | Solved |
-| 8 | Bypassing flawed input filters for server-side prototype pollution | Practitioner | Not started |
+| 8 | Bypassing flawed input filters for server-side prototype pollution | Practitioner | Solved |
 | 9 | Remote code execution via server-side prototype pollution | Practitioner | Not started |
 | 10 | Exfiltrating sensitive data via server-side prototype pollution | Expert | Not started |
