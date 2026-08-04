@@ -41,7 +41,7 @@ Exploiting timing gaps in concurrent request processing to bypass business logic
 
 Attacking REST APIs by reading their documentation, calling unused HTTP methods, exploiting mass assignment to inject fields the frontend hides, and abusing server-side parameter pollution to hijack internal requests.
 
-**Prototype Pollution** (6/10) - [labs](prototype-pollution/)
+**Prototype Pollution** (7/10) - [labs](prototype-pollution/)
 
 Adding properties to JavaScript's Object.prototype so every object inherits attacker-controlled values, chaining a source, gadget, and sink into DOM XSS on the client and privilege escalation or RCE on the server. Client-side labs are documented as browser payloads since they can't be automated with Python.
 
