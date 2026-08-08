@@ -19,7 +19,7 @@ CSRF is exploited by hosting an HTML page on the exploit server and delivering i
 | # | Lab | Difficulty | Status |
 |---|-----|-----------|--------|
 | 2 | CSRF where token validation depends on request method | Practitioner | Solved |
-| 3 | CSRF where token validation depends on token being present | Practitioner | Not started |
+| 3 | CSRF where token validation depends on token being present | Practitioner | Solved |
 | 4 | CSRF where token is not tied to user session | Practitioner | Not started |
 | 5 | CSRF where token is tied to non-session cookie | Practitioner | Not started |
 | 6 | CSRF where token is duplicated in cookie | Practitioner | Not started |
