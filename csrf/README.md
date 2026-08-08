@@ -22,7 +22,7 @@ CSRF is exploited by hosting an HTML page on the exploit server and delivering i
 | 3 | CSRF where token validation depends on token being present | Practitioner | Solved |
 | 4 | CSRF where token is not tied to user session | Practitioner | Solved |
 | 5 | CSRF where token is tied to non-session cookie | Practitioner | Solved |
-| 6 | CSRF where token is duplicated in cookie | Practitioner | Not started |
+| 6 | CSRF where token is duplicated in cookie | Practitioner | Solved |
 
 ## Bypassing SameSite restrictions
 
