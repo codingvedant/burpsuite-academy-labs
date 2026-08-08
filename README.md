@@ -45,7 +45,7 @@ Attacking REST APIs by reading their documentation, calling unused HTTP methods,
 
 Adding properties to JavaScript's Object.prototype so every object inherits attacker-controlled values, chaining a source, gadget, and sink into DOM XSS on the client and privilege escalation or RCE on the server. Client-side labs are documented as browser payloads since they can't be automated with Python.
 
-**CSRF** (6/12) - [labs](csrf/)
+**CSRF** (7/12) - [labs](csrf/)
 
 Forging state-changing requests that ride the victim's session cookie, then defeating each CSRF defense in turn: flawed token validation, SameSite cookie restrictions, and Referer checks. Exploits are HTML pages delivered from the exploit server.
 
