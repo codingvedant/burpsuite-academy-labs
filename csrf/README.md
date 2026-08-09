@@ -37,5 +37,5 @@ CSRF is exploited by hosting an HTML page on the exploit server and delivering i
 
 | # | Lab | Difficulty | Status |
 |---|-----|-----------|--------|
-| 11 | CSRF where Referer validation depends on header being present | Practitioner | Not started |
+| 11 | CSRF where Referer validation depends on header being present | Practitioner | Solved |
 | 12 | CSRF with broken Referer validation | Practitioner | Not started |
