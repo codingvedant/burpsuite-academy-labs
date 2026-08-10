@@ -30,7 +30,7 @@ CSRF is exploited by hosting an HTML page on the exploit server and delivering i
 |---|-----|-----------|--------|
 | 7 | SameSite Lax bypass via method override | Practitioner | Solved |
 | 8 | SameSite Strict bypass via client-side redirect | Practitioner | Solved |
-| 9 | SameSite Strict bypass via sibling domain | Practitioner | Not started |
+| 9 | SameSite Strict bypass via sibling domain | Practitioner | Solved |
 | 10 | SameSite Lax bypass via cookie refresh | Practitioner | Not started |
 
 ## Bypassing Referer-based defenses
