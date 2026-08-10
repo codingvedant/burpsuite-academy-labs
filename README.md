@@ -49,7 +49,7 @@ Adding properties to JavaScript's Object.prototype so every object inherits atta
 
 Forging state-changing requests that ride the victim's session cookie, then defeating each CSRF defense in turn: flawed token validation, SameSite cookie restrictions, and Referer checks. Exploits are HTML pages delivered from the exploit server.
 
-**WebSockets** (2/3) - [labs](websockets/)
+**WebSockets** (3/3) - [labs](websockets/)
 
 Attacking full-duplex WebSocket connections: injecting XSS through chat messages, tampering with the upgrade handshake to bypass controls, and cross-site WebSocket hijacking to read data from an authenticated connection.
 

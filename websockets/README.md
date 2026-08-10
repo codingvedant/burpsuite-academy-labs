@@ -10,4 +10,4 @@ Exploited with Burp's WebSockets history (observe frames) and WebSockets Repeate
 |---|-----|-----------|--------|
 | 1 | Manipulating WebSocket messages to exploit vulnerabilities | Apprentice | Solved |
 | 2 | Manipulating the WebSocket handshake to exploit vulnerabilities | Practitioner | Solved |
-| 3 | Cross-site WebSocket hijacking | Practitioner | Not started |
+| 3 | Cross-site WebSocket hijacking | Practitioner | Solved |
