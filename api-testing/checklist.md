@@ -57,3 +57,13 @@ Found an API endpoint?
 - Trigger a reset/action on your own account first to learn the exact URL and parameter names, then swap in the target's values
 - A reset token is the key to the new-password page - it almost always rides in a query parameter
 - Compare valid vs invalid input responses to spot which endpoints leak information
+
+## Tools & automation
+
+**Burp tools**
+- Repeater - change the HTTP method (GET/POST/PATCH/DELETE), send OPTIONS to list allowed methods, tamper JSON, set `Content-Type: application/json`
+- Intruder - fuzz for hidden endpoints and parameters
+- Scanner (if available) - crawl for API docs (`/swagger`, `/openapi.json`)
+
+**Scripts** (`solve.py` per lab, each takes the lab URL as an argument)
+- lab-01 to lab-04 - reliable end-to-end; JSON requests via the `requests` library, where `json=` sets the content type automatically

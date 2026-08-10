@@ -55,3 +55,18 @@ Found serialized data?
 - Always URL-decode cookies before base64-decoding (cookies often have `%3d` instead of `=`)
 - PHP string length fields must match: `s:5:"admin"` - the 5 must equal the string length
 - For Java on modern JVMs (16+), ysoserial needs `--add-opens` flags to access internal modules
+
+## Tools & automation
+
+**Burp tools**
+- Repeater - replay requests with tampered serialized cookies
+- Decoder - base64 / URL decode the blob, edit it, re-encode
+
+**CLI tools**
+- `ysoserial` (`ysoserial-all.jar`, gitignored) - generate Java gadget-chain payloads (CommonsCollections4, etc.); needs Java, plus `--add-opens` flags on JVM 16+
+- `phpggc` (cloned repo, gitignored) - generate PHP gadget-chain payloads (Symfony/RCE4, etc.)
+
+**Scripts** (`solve.py` per lab, each takes the lab URL as an argument)
+- lab-01 to lab-04 - reliable, pure-Python object tampering / type juggling / object injection
+- lab-05 (Java) - shells out to `ysoserial`; needs Java and the jar present, URL-encodes the base64 payload into the cookie
+- lab-06 (PHP) - shells out to `phpggc`; needs PHP and the phpggc clone, reads the HMAC secret from the leaked phpinfo, then signs the cookie

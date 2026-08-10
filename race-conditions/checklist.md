@@ -54,3 +54,13 @@ Found a security-critical operation?
 - Partial construction windows are tiny - send hundreds of attempts
 - Time-sensitive attacks may need multiple runs to hit the same timestamp
 - Always check response length/status differences to spot the winning request
+
+## Tools & automation
+
+**Burp tools**
+- Repeater single-packet attack - add requests to a tab group, then "Send group in parallel (single connection)"; the most reliable timing method over HTTP/2
+- Turbo Intruder - the `race-single-packet-attack.py` template with the gate mechanism, for many or complex request patterns
+- Connection warming - send a GET `/` before the attack to remove first-request connection setup jitter
+
+**Scripts** (`solve.py` per lab, each takes the lab URL as an argument)
+- lab-01 to lab-06 - DOCUMENTATION-GRADE, not reliable. They use Python threading, which cannot match Burp's HTTP/2 single-packet timing, so they capture the logic and endpoints but may not actually win the race. Use Burp Repeater or Turbo Intruder for real exploitation.

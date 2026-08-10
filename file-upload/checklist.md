@@ -76,3 +76,17 @@ Once you have a shell uploaded and executing:
 - Upload HTML/SVG with `<script>` tags for stored XSS
 - Upload XML-based files (.docx, .svg) with XXE payloads
 - Upload oversized files for DoS
+
+## Tools & automation
+
+**Burp tools**
+- Repeater - edit the multipart body: swap `Content-Type`, rename the file, tamper the extension
+- Intruder - fuzz extensions (`.php5`, `.phtml`, `.phar`, ...) and null-byte / double-extension variants
+- Turbo Intruder - the race-condition lab (upload, then fetch before deletion) via the gate mechanism
+
+**CLI tools**
+- `exiftool` - embed PHP in an image comment to build a polyglot: `exiftool -Comment='<?php system($_GET["cmd"]); ?>' image.jpg`
+
+**Scripts** (`solve.py` per lab, each takes the lab URL as an argument)
+- lab-01 to lab-06 - reliable, deterministic end-to-end (login -> upload -> trigger -> read flag)
+- lab-07 (race condition) - timing-dependent; uses threading and may need reruns

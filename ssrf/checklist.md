@@ -63,3 +63,13 @@ Once you have SSRF working:
 - Don't follow redirects in server-side requests
 - Validate the resolved IP address, not just the hostname
 - Use a firewall to block outbound requests to internal ranges
+
+## Tools & automation
+
+**Burp tools**
+- Repeater - swap the URL parameter and watch responses / timing differences
+- Collaborator - confirm blind / out-of-band SSRF by pointing the server-side fetch at your Collaborator payload
+- Intruder - sweep internal IPs and ports through the SSRF parameter
+
+**Scripts** (`solve.py` per lab, each takes the lab URL as an argument)
+- lab-01 to lab-05 - reliable end-to-end; the server-side fetch is deterministic

@@ -54,3 +54,13 @@ Once you can read arbitrary files, go for:
 - Whitelist allowed filenames when possible
 - Canonicalize the path (resolve all `../`) then verify it starts with the expected base directory
 - Don't pass user input to filesystem APIs at all
+
+## Tools & automation
+
+**Burp tools**
+- Repeater - edit the filename/path parameter and observe the response
+- Proxy history - find every request that passes a filename
+- Comparer - diff blocked vs allowed responses while tuning encodings
+
+**Scripts** (`solve.py` per lab, each takes the lab URL as an argument)
+- lab-01 to lab-06 - reliable; each reads a target file deterministically (no timing involved)

@@ -61,3 +61,17 @@ Every prototype pollution attack needs all three:
 - Always test both bracket and dot notation before giving up on a source
 - Client-side labs are browser-only - the payload IS the exploit, no Python automation
 - For the `eval`/`sequence` gadget, remember the app appends `1`, so end with an operator
+
+## Tools & automation
+
+**Burp tools**
+- DOM Invader (Burp browser) - enable "Prototype pollution" to auto-detect client-side sources and gadgets ("Scan for gadgets"), then Exploit
+- Repeater - server-side JSON pollution and the `status` detection oracle (pollute, then send malformed JSON to read the overridden status code)
+- Exploit server - host and deliver the third-party-libraries payload (Lab 5)
+
+**CLI tools**
+- `node` - locally reason about server-side gadgets like `execArgv` when building the RCE payload
+
+**Scripts / exploits**
+- lab-01 to lab-05 - `exploit.md` only. Client-side labs run entirely in the browser (URL params + DOM Invader + JS console), so the payload IS the exploit - no Python automation is possible
+- lab-06 to lab-09 - `solve.py` (server-side JSON, reliable). lab-07 logs in via a JSON body to survive the sticky self-polluted state; lab-09 (RCE) is verified by structure but was not run end-to-end because the lab was down
