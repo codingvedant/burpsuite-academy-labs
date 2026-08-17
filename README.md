@@ -53,6 +53,10 @@ Forging state-changing requests that ride the victim's session cookie, then defe
 
 Attacking full-duplex WebSocket connections: injecting XSS through chat messages, tampering with the upgrade handshake to bypass controls, and cross-site WebSocket hijacking to read data from an authenticated connection.
 
+**JWT Attacks** (8/8) - [labs](jwt/)
+
+Breaking weak JWT implementations by tampering claims, bypassing signature checks, brute-forcing weak HMAC secrets, injecting trusted key material through headers, abusing `kid` path traversal, and exploiting algorithm confusion.
+
 ## Setup
 
 ```bash
