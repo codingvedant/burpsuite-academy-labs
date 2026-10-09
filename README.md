@@ -57,9 +57,9 @@ Attacking full-duplex WebSocket connections: injecting XSS through chat messages
 
 Breaking weak JWT implementations by tampering claims, bypassing signature checks, brute-forcing weak HMAC secrets, injecting trusted key material through headers, abusing `kid` path traversal, and exploiting algorithm confusion.
 
-**Clickjacking** (4/5) - [labs](clickjacking/)
+**Clickjacking** (5/5) - [labs](clickjacking/)
 
-Layering a transparent target iframe over a decoy so the victim's own clicks trigger actions on another site. UI-redressing defeats defences like CSRF tokens because the victim issues a genuine, fully-tokened request. Exploits are HTML pages delivered from the exploit server.
+Layering a transparent target iframe over a decoy so the victim's own clicks trigger actions on another site. UI-redressing defeats defences like CSRF tokens because the victim issues a genuine, fully-tokened request - including prefilling inputs via URL params, neutralising frame busters with the iframe sandbox, chaining into DOM XSS, and stacking decoys for multistep flows. Exploits are HTML pages delivered from the exploit server.
 
 ## Setup
 
