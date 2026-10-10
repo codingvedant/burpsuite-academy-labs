@@ -61,6 +61,10 @@ Breaking weak JWT implementations by tampering claims, bypassing signature check
 
 Layering a transparent target iframe over a decoy so the victim's own clicks trigger actions on another site. UI-redressing defeats defences like CSRF tokens because the victim issues a genuine, fully-tokened request - including prefilling inputs via URL params, neutralising frame busters with the iframe sandbox, chaining into DOM XSS, and stacking decoys for multistep flows. Exploits are HTML pages delivered from the exploit server.
 
+**Cross-Site Scripting (XSS)** (1/30) - [labs](xss/)
+
+Running attacker JavaScript in a victim's browser in the context of a trusted site - reflected, stored, and DOM-based - then bypassing output encoding and filters per context and using the execution to steal sessions, capture credentials, or take over accounts.
+
 ## Setup
 
 ```bash
